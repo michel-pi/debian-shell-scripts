@@ -1,1 +1,1 @@
-# debian-install-scripts
+# debian-shell-scripts
