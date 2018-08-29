@@ -17,7 +17,7 @@ cd /home/teamspeak
 
 # download teamspeak
 
-wget -e --output-document=ts3.tar.bz2 -nv http://dl.4players.de/ts/releases/3.0.13.8/teamspeak3-server_linux_amd64-3.0.13.8.tar.bz2
+wget -e --output-document=ts3.tar.bz2 -nv http://dl.4players.de/ts/releases/3.3.1/teamspeak3-server_linux_amd64-3.3.1.tar.bz2
 
 # unzip
 
