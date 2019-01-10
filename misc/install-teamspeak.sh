@@ -7,7 +7,7 @@ apt-get -y upgrade
 
 # Add a user
 
-adduser --gecos "" --create-home teamspeak
+adduser --gecos "" teamspeak
 
 # Switch user
 
