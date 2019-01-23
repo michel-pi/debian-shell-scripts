@@ -1,35 +1,19 @@
 #!/bin/bash
 
-# Update
+apt-get update && apt-get upgrade -y
 
-apt-get update
-apt-get -y upgrade
+apt-get install curl nano unzip wget openssl -y
 
-# Helpful programs
+apt-get install apache2 apache2-utils -y
 
-apt-get -y install curl nano unzip wget
-
-# OpenSSL
-
-apt-get install -y openssl
-
-# Install apache
-
-apt-get -y install apache2 apache2-utils
-
-# Install MariaDB
-
-apt-get -y install mariadb-client mariadb-server
+apt-get install mariadb-client mariadb-server -y
 
 mysql_secure_installation
 
 systemctl restart mariadb
 systemctl enable mariadb
 
-# Install PHP
-# Remove unused modules on small hardware
-
-apt-get install php7.0 php-pear php7.0-common php7.0-fpm php7.0-cli php7.0-curl php7.0-gd php7.0-geoip php7.0-intl php7.0-json php7.0-imap php7.0-mbstring php7.0-mcrypt php7.0-mysql php7.0-opcache php7.0-readline php7.0-xml php7.0-xsl php7.0-zip php7.0-bz2 php7.0-gd php7.0-soap libapache2-mod-php7.0 -y
+apt-get install libapache2-mod-php7.0 php7.0 php7.0-cgi php7.0-common php7.0-curl php7.0-fpm php7.0-gd php7.0-json php7.0-mysql php7.0-opcache php7.0-xml -y
 
 # Restart apache
 
